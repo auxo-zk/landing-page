@@ -5,7 +5,7 @@ import { fontRaleway } from "src/fonts/fonts";
 
 export default function Footer() {
     return (
-        <div className="relative" style={{ background: "#043E35", paddingTop: "390px", zIndex: -1, marginTop: "-200px", paddingBottom: "90px" }}>
+        <div className="relative footer" style={{ background: "#043E35", paddingTop: "390px", zIndex: -1, marginTop: "-200px", paddingBottom: "90px" }}>
             <div className="container">
                 <Image src={imagePath.LOGO_FULLLL_WHITE} alt="logo auxo" style={{ width: "152px", height: "auto" }} />
                 <div className="flex flex-wrap mt-4 gap-2 place-items-center">

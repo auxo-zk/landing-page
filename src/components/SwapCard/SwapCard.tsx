@@ -9,7 +9,7 @@ export default function SwapCard() {
         <>
             <ButtonSlide />
             <div className="solution">
-                <div id="post1" className="post_solution post_solution_1">
+                <div id="post1" className="post_solution post_solution_1" data-aos="fade-right" data-aos-delay="1000">
                     <div>
                         <p className="typo3 mb-3">Funding Activities</p>
                         <p className="subtitle">Diversity & Transparency</p>
@@ -24,10 +24,10 @@ export default function SwapCard() {
                         </div>
                     </div>
                     <div>
-                        <Image src={imagePath.SOLUTION1} alt="auxo solution 1" style={{ maxWidth: "421px", height: "auto" }} />
+                        <Image className="solution-img" src={imagePath.SOLUTION1} alt="auxo solution 1" />
                     </div>
                 </div>
-                <div id="post2" className="post_solution post_solution_2">
+                <div id="post2" className="post_solution post_solution_2" data-aos="fade-right" data-aos-delay="700">
                     <div>
                         <p className="typo3 mb-3">Investment Framework</p>
                         <p className="subtitle">On-chain Implementation</p>
@@ -49,17 +49,17 @@ export default function SwapCard() {
                         </div>
                     </div>
                     <div>
-                        <Image src={imagePath.SOLUTION2} alt="auxo solution 1" style={{ maxWidth: "421px", height: "auto" }} />
+                        <Image className="solution-img" src={imagePath.SOLUTION2} alt="auxo solution 1" />
                     </div>
                 </div>
-                <div id="post3" className="post_solution post_solution_3">
+                <div id="post3" className="post_solution post_solution_3" data-aos="fade-right" data-aos-delay="400">
                     <div>
                         <p className="typo3 mb-3">Privacy Protection</p>
                         <p className="subtitle">Threshold Homomorphic Encryption with Zero-knowledge Proof</p>
                         <p className="desc">Utilize ZKP technology in more complex ways to solve problems related to user’s privacy protection.</p>
                     </div>
                     <div>
-                        <Image src={imagePath.SOLUTION3} alt="auxo solution 1" style={{ maxWidth: "421px", height: "auto" }} />
+                        <Image className="solution-img" src={imagePath.SOLUTION3} alt="auxo solution 1" />
                     </div>
                 </div>
             </div>
@@ -113,9 +113,9 @@ function ButtonSlide() {
     }
     return (
         <div className="flex justify-center gap-3 mt-4 mb-7">
-            <button className="btn-slide" style={{ background: active == "post1" ? "#FC8C69" : "" }} onClick={() => selectPost("post1")}></button>
-            <button className="btn-slide" style={{ background: active == "post2" ? "#FC8C69" : "" }} onClick={() => selectPost("post2")}></button>
-            <button className="btn-slide" style={{ background: active == "post3" ? "#FC8C69" : "" }} onClick={() => selectPost("post3")}></button>
+            <button className="btn-slide" style={{ background: active == "post1" ? "#FC8C69" : "" }} onClick={() => selectPost("post1")} data-aos="fade-right" data-aos-delay="1000"></button>
+            <button className="btn-slide" style={{ background: active == "post2" ? "#FC8C69" : "" }} onClick={() => selectPost("post2")} data-aos="fade-right" data-aos-delay="700"></button>
+            <button className="btn-slide" style={{ background: active == "post3" ? "#FC8C69" : "" }} onClick={() => selectPost("post3")} data-aos="fade-right" data-aos-delay="400"></button>
         </div>
     );
 }

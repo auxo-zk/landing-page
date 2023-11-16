@@ -58,6 +58,11 @@ body {
     font-style: normal;
     line-height: 38px;
 }
+.banner {
+    .logo-3d-width {
+        width: 228px;
+    }
+}
 
 .wave {
     position: absolute;
@@ -112,7 +117,7 @@ body {
         min-height: 450px;
         width: calc(100% - 38px);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.16);
-        @apply flex flex-wrap py-12 px-4 justify-center gap-x-20 gap-y-10;
+        @apply flex flex-wrap pt-12 px-4 justify-center gap-x-20 gap-y-10;
 
         .subtitle {
             color: #fc8c69;
@@ -139,6 +144,12 @@ body {
                 font-weight: 600;
                 line-height: 33px;
             }
+        }
+        .solution-img {
+            max-width: 421px;
+            max-height: 345px;
+            width: auto;
+            height: auto;
         }
     }
     .post_solution_1 {
@@ -167,8 +178,14 @@ body {
 /*Ipad ngang(1024 x 768)*/
 @media screen and (max-width: 1024px) {
     .solution {
+        min-height: 780px;
         .post_solution {
             min-height: 775px;
+
+            .solution-img {
+                max-width: 419px;
+                max-height: 345px;
+            }
         }
     }
 }
@@ -187,17 +204,51 @@ body {
 
 /*Tablet nhỏ(480 x 640)*/
 @media screen and (max-width: 480px) {
+    .typo1 {
+        font-size: 44px;
+        letter-spacing: 2.2px;
+        line-height: 52px;
+    }
+    .typo2 {
+        font-size: 40px;
+    }
+    .typo3 {
+        font-size: 24px;
+    }
+    .typo4 {
+        font-size: 22px;
+    }
+    .typo5 {
+        font-size: 17px;
+    }
     .container {
         @apply px-4;
+    }
+    .banner {
+        .logo-3d-width {
+            width: 115px;
+        }
+    }
+
+    .solution {
+        min-height: 780px;
+        .post_solution {
+            min-height: 775px;
+            .subtitle {
+                font-size: 17px;
+            }
+            .solution-img {
+                max-width: 250px;
+                max-height: 203px;
+            }
+        }
     }
 }
 
 /*Iphone(480 x 640)*/
 @media screen and (max-width: 375px) {
-    .typo1 {
-        font-size: 44px;
-        letter-spacing: 2.2px;
-        line-height: 52px;
+    .img-responsive {
+        max-width: 290px !important;
     }
 }
 
