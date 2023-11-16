@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import "aos/dist/aos.css"; // You can also use <link> for styles
+import "./globals.scss";
+import AOSInit from "src/components/AOSInit/AOSInit";
+import { fontInter } from "src/fonts/fonts";
+import Header from "src/layout/Header/Header";
+import Footer from "src/layout/Footer/Footer";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -12,7 +14,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <AOSInit />
+            <body className={`${fontInter.className} relative`}>
+                <Header />
+                {children}
+                <Footer />
+            </body>
         </html>
     );
 }
