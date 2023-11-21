@@ -10,12 +10,12 @@ export default function Header() {
                 <Link href={"/"} passHref>
                     <Image src={imagePath.LOGO_FULLLL_GREEN} alt="logo auxo" style={{ width: "100px", height: "auto" }} data-aos="zoom-in" />
                 </Link>
-                <Link href={"#"} className="ml-auto">
+                {/* <Link href={"#"} className="ml-auto">
                     <p className="font-bold text-green-900">Service</p>
                 </Link>
                 <Link href={"#"} className="ml-9">
                     <p className="font-bold text-green-900">About us</p>
-                </Link>
+                </Link> */}
             </div>
         </div>
     );
