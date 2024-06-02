@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { LINK_DISCORD, LINK_TWITTER } from "src/constants";
 import { imagePath } from "src/constants/imagePath";
 import { fontRaleway } from "src/fonts/fonts";
 
@@ -8,10 +9,41 @@ export default function Footer() {
     return (
         <div className="relative footer" style={{ background: "#043E35", paddingTop: "390px", zIndex: 0, marginTop: "-200px", paddingBottom: "90px" }}>
             <div className="container">
-                <Image src={imagePath.LOGO_FULLLL_WHITE} alt="logo auxo" style={{ width: "152px", height: "auto" }} />
-                <div className="flex flex-wrap mt-4 gap-2 place-items-center">
+                <div className="flex flex-wrap, place-items-center">
+                    <Image src={imagePath.LOGO_FULLLL_WHITE} alt="logo auxo" style={{ width: "152px", height: "auto" }} />
+                    <div className="flex gap-2 ml-auto">
+                        <Link href={LINK_TWITTER} passHref target="_blank" className="p-3 block w-fit rounded-xl backdrop-blur-sm bg-white bg-opacity-20">
+                            <svg
+                                className="fill-white"
+                                width="20"
+                                height="20"
+                                xmlns="http://www.w3.org/2000/svg"
+                                shapeRendering="geometricPrecision"
+                                textRendering="geometricPrecision"
+                                imageRendering="optimizeQuality"
+                                fillRule="evenodd"
+                                clipRule="evenodd"
+                                viewBox="0 0 512 462.799"
+                            >
+                                <path
+                                    fill-rule="nonzero"
+                                    d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"
+                                />
+                            </svg>
+                        </Link>
+                        <Link href={LINK_DISCORD} passHref target="_blank" className="p-3 block w-fit rounded-xl backdrop-blur-sm bg-white bg-opacity-20">
+                            <svg width="20" height="20" viewBox="0 0 127.14 96.36">
+                                <path
+                                    fill="#fff"
+                                    d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"
+                                />
+                            </svg>
+                        </Link>
+                    </div>
+                </div>
+                <div className="flex flex-wrap mt-6 place-items-center gap-4">
                     <p className="mr-auto" style={{ color: "#AAB8B6", fontSize: "14px", fontWeight: "300" }}>
-                        Auxo @2023| All right reserved
+                        Auxo @2024| All right reserved
                     </p>
                     <div className="flex">
                         <div className="mr-16">
