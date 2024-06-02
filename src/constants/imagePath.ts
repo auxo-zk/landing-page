@@ -5,6 +5,7 @@ import LOOKING_FOR from "public/images/2USDT.png";
 import SOLUTION1 from "public/images/solution1.png";
 import SOLUTION2 from "public/images/solution2.png";
 import SOLUTION3 from "public/images/solution3.png";
+import THUMBNAIL from "public/thumbnail.jpg";
 
 export const imagePath = {
     LOGO_FULLLL_GREEN,
@@ -14,4 +15,5 @@ export const imagePath = {
     SOLUTION1,
     SOLUTION2,
     SOLUTION3,
+    THUMBNAIL,
 };
