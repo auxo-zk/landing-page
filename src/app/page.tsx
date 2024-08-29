@@ -24,9 +24,9 @@ export default function Home() {
                         aspectRatio: "527/150",
                     }}
                 ></div>
-                <p className="pt-10 relative" style={{ color: "#2C978F", fontWeight: "700" }} data-aos="zoom-in-up">
+                {/* <p className="pt-10 relative" style={{ color: "#2C978F", fontWeight: "700" }} data-aos="zoom-in-up">
                     {"Supported by Mina's zkIgnite Program"}
-                </p>
+                </p> */}
                 <p className={`${fontRaleway.className} typo1 uppercase mx-auto mt-4 relative`} style={{ maxWidth: "890px" }} data-aos="zoom-in-down" data-aos-delay="700">
                     Explore the Future of On-chain Funding
                 </p>
